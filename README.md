@@ -1,4 +1,4 @@
-## About Project
+# About Project
 
 Esse repositório trata-se de um micro-serviço desenvolvido utilizando a linguagem Java e padrões de arquitetura como Hexagonal e Clen Arch, ambos padrões ensinados durantes as aulas da matéria Software Engineering Development ministradas pelo professor Rafael Tsuji Matsuyama.
 
@@ -22,3 +22,31 @@ No desenvolvimento desse projeto foi utilizando os conceitos e padrões.
 - Singleton
 - Clean Architecture
 - Hexagonal
+- TDD 
+
+# How Start
+
+Para executar o projeto é necessário as seguintes ferramentas:
+
+- Docker
+- Java                          (Caso queira executar fora do docker)
+- Maven                         (Caso queira executar fora do docker)
+- Idle Compativel com Java      (Caso queira executar fora do docker)
+
+Com o Docker instalado bastar executar o seguinte comando:
+
+```bash
+$ docker compose up
+```
+
+Será disponibilizado a aplicação na porta 8084.
+
+## Endpoint
+
+GET     /api/v1/book
+O metódo GET não requer nenhum header ou body.
+
+
+POST    /api/v1/book
+| Tipo | Valor |
+| Body | Um objeto do tipo Book |
