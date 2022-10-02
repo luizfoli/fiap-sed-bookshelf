@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    ports:
+        - "3306:3306"
+    command: --init-file /data/application/init.sql
+    volumes:
+        - ./db/init.sql:/data/application/init.sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=fiaptoor
+      - MYSQL_DATABASE=Bookshop
+  bookshop-app:
+    depends_on:
+      - mysql
+    build: ./app
+    ports:
+      - 8084:8084
+    links:
+      - mysql
+
+volumes:
+  db:
