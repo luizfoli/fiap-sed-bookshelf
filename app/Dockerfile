@@ -1,5 +1,5 @@
 FROM openjdk:11-jdk
 MAINTAINER Luiz Oliveira
-COPY target/bookshop-0.0.1-SNAPSHOT.jar bookshop-0.0.1-SNAPSHOT.jar
+COPY target/*.jar app.jar
 EXPOSE 8084
-ENTRYPOINT ["java","-jar","bookshop-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
