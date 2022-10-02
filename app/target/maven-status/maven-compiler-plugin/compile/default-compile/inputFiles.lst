@@ -1,0 +1,9 @@
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/application/api/BookController.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/infrastructure/repository/mock/MockUtils.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/BookshelfApplication.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/infrastructure/repository/entity/BookDBEntity.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/infrastructure/mapper/BookMapper.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/domain/entity/Book.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/domain/entity/Author.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/infrastructure/repository/BookRepository.java
+/Users/lfo/Projects/fiap-sed-bookshop/app/src/main/java/br/com/fiap/bookshelf/domain/service/BookService.java
