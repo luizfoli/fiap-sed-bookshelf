@@ -43,10 +43,10 @@ Será disponibilizado a aplicação na porta 8084.
 
 ## Endpoint
 
-* GET /api/v1/book
+GET /api/v1/book
 O metódo GET não requer nenhum header ou body.
 
-* POST /api/v1/book
+POST /api/v1/book
 | Tipo          | Valor                     |  
 | :------------ |--------------------------:|
 | Body          | Um objeto do tipo Book    |
