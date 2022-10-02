@@ -1,13 +1,13 @@
-package br.com.fiap.bookshop;
+package br.com.fiap.bookshelf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookshopApplication {
+public class BookshelfApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BookshopApplication.class, args);
+		SpringApplication.run(BookshelfApplication.class, args);
 	}
 
 }

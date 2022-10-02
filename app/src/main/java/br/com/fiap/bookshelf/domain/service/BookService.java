@@ -1,9 +1,9 @@
-package br.com.fiap.bookshop.domain.service;
+package br.com.fiap.bookshelf.domain.service;
 
-import br.com.fiap.bookshop.domain.entity.Book;
-import br.com.fiap.bookshop.infrastructure.mapper.BookMapper;
-import br.com.fiap.bookshop.infrastructure.repository.BookRepository;
-import br.com.fiap.bookshop.infrastructure.repository.entity.BookDBEntity;
+import br.com.fiap.bookshelf.domain.entity.Book;
+import br.com.fiap.bookshelf.infrastructure.mapper.BookMapper;
+import br.com.fiap.bookshelf.infrastructure.repository.BookRepository;
+import br.com.fiap.bookshelf.infrastructure.repository.entity.BookDBEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -57,5 +57,15 @@ public class BookService {
 
     }
 
+    public void add(Book book) {
+
+        try {
+            this.bookRepository.add(this.bookMapper.convertBookToBookDB(book));
+            log.info("Livro adicionado com sucesso");
+        } catch (Exception e) {
+            log.error("Ocorreu um erro durante adição de livro");
+        }
+
+    }
 
 }

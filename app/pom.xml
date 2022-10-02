@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.fiap</groupId>
-	<artifactId>bookshop</artifactId>
+	<artifactId>bookshelf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bookshop</name>
-	<description>Project about a fake book shop</description>
+	<name>bookshelf</name>
+	<description>Project about a bookshelf</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

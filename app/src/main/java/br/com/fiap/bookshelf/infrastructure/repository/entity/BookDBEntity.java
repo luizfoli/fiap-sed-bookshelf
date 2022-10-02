@@ -1,4 +1,4 @@
-package br.com.fiap.bookshop.infrastructure.repository.entity;
+package br.com.fiap.bookshelf.infrastructure.repository.entity;
 
 import lombok.*;
 

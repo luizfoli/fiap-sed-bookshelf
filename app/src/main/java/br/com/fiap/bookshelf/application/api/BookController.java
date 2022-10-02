@@ -1,17 +1,14 @@
-package br.com.fiap.bookshop.application.api;
+package br.com.fiap.bookshelf.application.api;
 
 
-import br.com.fiap.bookshop.domain.entity.Book;
-import br.com.fiap.bookshop.domain.service.BookService;
+import br.com.fiap.bookshelf.domain.entity.Book;
+import br.com.fiap.bookshelf.domain.service.BookService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static br.com.fiap.bookshop.application.api.BookController.ENDPOINT_NAME;
+import static br.com.fiap.bookshelf.application.api.BookController.ENDPOINT_NAME;
 
 @Slf4j
 @RestController
@@ -42,6 +39,21 @@ public class BookController {
             throw new RuntimeException(ERROR_MESSAGE);
         } finally {
             log.info(OUT_MESSAGE + ENDPOINT_NAME + " | get");
+        }
+    }
+
+    @PostMapping
+    public void post(@RequestBody Book book) {
+        try {
+
+            log.info(IN_MESSAGE + ENDPOINT_NAME + " | post");
+            this.bookService.add(book);
+
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            throw new RuntimeException(ERROR_MESSAGE);
+        } finally {
+            log.info(OUT_MESSAGE + ENDPOINT_NAME + " | post");
         }
     }
 

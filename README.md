@@ -15,7 +15,7 @@ Para desenvolvimento desse projeto foi utilizado as tecnologias:
 - Docker / Docker Compose
 - Java 11
 
-## Conceitos / Padrões
+## Concepts / Patterns
 
 No desenvolvimento desse projeto foi utilizando os conceitos e padrões.
 
