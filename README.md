@@ -7,7 +7,7 @@ Alunos Envolvidos:
 1. Luiz Felipe Oliveira
 2. Matheus Lando
 3. Marcos Moura
-4, Wellington Brandão
+4. Wellington Brandão
 
 ## :closed_book: About Bookshelf 
 
@@ -31,6 +31,13 @@ No desenvolvimento desse projeto foi utilizando os conceitos e padrões.
 - Hexagonal
 - TDD 
 
+O padrão de arquitetura, foi utilizado uma mistura de Clean Arch com Hexagonal.
+Dessa forma o código foi divido em camadas.
+
+* Application    : Entrada - Camada exposta para fora
+* Domain         : Responsável por toda regra de negócios do projeto
+* Infrastructure : Controla todas as ferramentas e dependências externas
+ 
 # How Start
 
 Para executar o projeto é necessário as seguintes ferramentas:
