@@ -2,6 +2,13 @@
 
 Esse repositório trata-se de um micro-serviço desenvolvido utilizando a linguagem Java e padrões de arquitetura como Hexagonal e Clen Arch, ambos padrões ensinados durantes as aulas da matéria Software Engineering Development ministradas pelo professor Rafael Tsuji Matsuyama.
 
+Alunos Envolvidos:
+
+1. Luiz Felipe Oliveira
+2. Matheus Lando
+3. Marcos Moura
+4, Wellington Brandão
+
 ## About Bookshelf 
 
 Desenvolvemos um conceito de Estante de Livros, onde o usuário pode salvar livros que já possui, simulando uma coleção virtual.
@@ -52,3 +59,4 @@ POST /api/v1/book
 | Body          | Um objeto do tipo Book    |
 
 Caso queira, segue versionado a collection para utilização dentro do Insomnia ou Postman.
+
